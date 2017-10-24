@@ -1,2 +1,18 @@
-# timestamp
-Takes a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date
+User stories:
+
+I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+
+If it does, it returns both the Unix timestamp and the natural language form of that date.
+If it does not contain a date or Unix timestamp, it returns null for those properties.
+Example usage:
+
+http://localhost:3000/Oct12%202017
+http://localhost:3000/1507762800
+
+
+Example output:
+
+{
+"unix": "1507762800",
+"natural": "October 12, 2017"
+}
